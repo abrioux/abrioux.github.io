@@ -1,0 +1,75 @@
+@font-face {
+	font-family: news_cycle;
+	src:url(Fonts/fonts-news-cycle/NewsCycle-Regular.ttf);
+}
+@font-face {
+	font-family: Acknowledgement;
+	src:url(Fonts/Acknowledgement/Acknowledgement.otf);
+}
+
+@font-face {
+	font-family: Archivo_Regular;
+	src:url(Fonts/Archivo/ArchivoNarrow-Regular.otf);
+}
+
+body {
+	background-image:url(Images/diagmonds/diagmonds/diagmonds_@2X.png);
+}
+
+.nav {
+	background-color:#3399FF;
+	padding-top:10px;
+	font-size: 30px;
+}
+.nav a {
+  color: #5a5a5a;
+  font-size: 15px;
+  font-weight: bold;
+  color:black;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav li {
+  display: inline;
+}
+
+.pagebody {
+  background-size:auto;
+  height: 500px;
+}
+
+.pagebody .container {
+  position: relative;
+  left:50px;
+  top:125px;
+  right:125px;
+}
+
+.pagebody h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-weight: bold;
+}
+
+.pagebody p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.pagebody a {
+	font-size: 20px;
+  	color: #3366BB;
+}
+	
+
+.pagebody ul{
+	font-size:20px;
+	color:#fff;
+}
+
+a:hover {
+	color:white;
+	text-decoration:none;
+}

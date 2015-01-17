@@ -1,7 +1,3 @@
-html {
-    width:100%;
-}
-
 body {
 	background-image:url(Images/diagmonds/diagmonds/diagmonds_@2X.png);
 }
@@ -9,9 +5,10 @@ body {
 .nav {
 	background-color:#3399FF;
     font-family: 'Segoe UI';
-	padding-top:10px;
-	font-size: 30px;
-    position:relative;
+}
+
+.nav ,container {
+    padding: 10px 10px;
 }
 
 .nav a {
@@ -27,19 +24,17 @@ body {
 .nav li {
   display: inline;
 }
-
 .pagebody {
   height: 500px;
   font-family: 'Segoe UI';
+    width:auto;
   
 }
 
 .pagebody .container {
   position: relative;
-  left:50px;
-  top:125px;
-  right:250px;
-  padding-right:100px;
+  padding-left:50px;
+  top:100px;
 }
 
 .pagebody h1 {

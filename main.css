@@ -1,17 +1,4 @@
-@font-face {
-	font-family: news_cycle;
-	src:url(Fonts/fonts-news-cycle/NewsCycle-Regular.ttf);
-}
-@font-face {
-	font-family: Acknowledgement;
-	src:url(Fonts/Acknowledgement/Acknowledgement.otf);
-}
-
-@font-face {
-	font-family: Archivo_Regular;
-	src:url(Fonts/Archivo/ArchivoNarrow-Regular.otf);
-}
-
+  
 body {
 	background-image:url(Images/diagmonds/diagmonds/diagmonds_@2X.png);
 }
@@ -44,17 +31,20 @@ body {
   position: relative;
   left:50px;
   top:125px;
-  right:125px;
+  right:250px;
 }
 
 .pagebody h1 {
   color: #fff;
+  font-family: 'Segoe UI';
   font-size: 48px;  
   font-weight: bold;
 }
 
 .pagebody p {
-  font-size: 20px;
+  font-size: 20px;'
+  padding-right: 50px;
+  font-family: 'Segoe UI';
   color: #fff;
 }
 

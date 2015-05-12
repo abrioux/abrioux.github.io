@@ -21,14 +21,18 @@ body {
   text-decoration: none;
 }
 
+ul {
+  display:none;
+}
+
 .nav li {
   display: inline;
 }
+
 .pagebody {
   height: 500px;
   font-family: 'Segoe UI';
     width:auto;
-  
 }
 
 .pagebody .container {

@@ -21,12 +21,9 @@ body {
   text-decoration: none;
 }
 
-ul {
-  display:none;
-}
-
 .nav li {
-  display: inline;
+  display:inline;
+  opacity:0;
 }
 
 .pagebody {

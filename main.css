@@ -1,67 +1,403 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, .nav-menu, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
 body {
-	background-image:url(Images/diagmonds/diagmonds/diagmonds_@2X.png);
+	line-height: 1.15;
 }
-
-.nav {
-	background-color:#3399FF;
-    font-family: 'Segoe UI';
+ol, .nav-menu {
+	list-style:none;
 }
-
-.nav ,container {
-    padding: 10px 10px;
+blockquote, q {
+	quotes:none;
 }
-
-.nav a {
-  color: #5a5a5a;
-  font-size: 15px;
-  font-weight: bold; 
-  color:black;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  text-decoration: none;
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
 }
-
-.nav li {
-  display:inline;
-  opacity:0;
+:focus {
+	outline:0;
 }
-
-.pagebody {
-  height: 500px;
-  font-family: 'Segoe UI';
-    width:auto;
-}
-
-.pagebody .container {
-  position: relative;
-  padding-left:50px;
-  top:100px;
-}
-
-.pagebody h1 {
-  color: #fff;
-  font-size: 48px;  
-  font-weight: bold;
-}
-
-.pagebody p {
-  font-size: 20px;
-  padding-right: 50px;
-  color: #fff;
-}
-
-.pagebody a {
-	font-size: 20px;
-  	color: #3366BB;
-}
-	
-
-.pagebody ul{
-	font-size:20px;
-	color:#fff;
-}
-
-a:hover {
-	color:white;
+ins {
 	text-decoration:none;
+}
+del {
+	text-decoration:line-through;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+body {
+	font-size: 1.05em;
+	font-family: 'Open Sans', sans-serif;
+	color: #545454;
+	margin: 0;
+}
+ @media only screen and (min-width: 641px) {
+header {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	background-color: #FFF;
+	border-bottom: 5px solid #545454;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	letter-spacing: 0.2em;
+}
+#logo-header {
+	position: relative;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	float: left;
+	clear: right;
+	padding: 25px 0 25px 2%;
+}
+.nav-menu {
+	position: relative;
+	display: inline-block;
+	float: right;
+	padding: 25px 2% 25px 0;
+	display: block;
+	margin: 0;
+}
+header a {
+	position: relative;
+	color: #545454;
+	font-weight:400;
+	font-size: 0.9em;
+	margin: 10px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.nav-menu a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #545454;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.nav-wrap a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.nav-wrap li {
+	display: inline;
+}
+.pagebody {
+	text-align: center;
+}
+section {
+	height:100vh;
+	width:100vw;
+	max-width: 100%;
+	margin:0;
+	padding:0;
+}
+.pagebody .home-container {
+	position: relative;
+	top: 30vh;
+	margin: 0 auto;
+}
+.pagebody .container {
+	position: relative;
+	margin: 0 auto;
+	top: 20vh;
+	width: 75%;
+	height: 65%;
+}
+.pagebody-color-bg {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	z-index: 0;
+	color: #FFF;
+	background-image: url(Images/cubes/cubes_transparent.png);
+	background-color: #44749D;
+}
+.pagebody-patterned-bg {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	z-index: 0;
+	background-image: url(Images/cubes/cubes.png);
+	color: #44749D;
+}
+.pagebody-color-bg a {
+	color: #FFF;
+}
+.pagebody-color-bg ul {
+	list-style-type: none;
+}
+.pagebody-color-bg h1 {
+	text-shadow: 1px 1px 1px #000;
+	font-size: 3em;
+	font-weight: 700;
+	padding-bottom: 0.5em;
+}
+.pagebody-color-bg p {
+	text-shadow: 1px 1px 1px #000;
+	font-size: 1.75em;
+	padding-bottom: 1em;
+}
+.pagebody-patterned-bg h1 {
+	text-shadow: 1px 1px 1px #BDB8AD;
+	font-size: 3em;
+	font-weight: 700;
+	padding-bottom: 0.5em;
+}
+.pagebody-patterned-bg p {
+	font-size: 1.75em;
+	padding-bottom: 1em;
+}
+#about p {
+	text-align: left;
+	font-size: 1.25em;
+}
+.button_sliding_bg {
+	color: #44749D;
+	background: #FFF;
+	padding: 12px 17px;
+	margin: 25px 0;
+	border: 3px solid #44749D;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 #44749D;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.7s;
+}
+.button_sliding_bg:hover {
+	box-shadow: inset 172px 0 0 0 #C6D4E1;
+	color: #44749D;
+}
+.container-left {
+	float: left;
+	width: 55%;
+	padding-right: 2em;
+	border-right: 1px solid #44749D;
+}
+.container-right {
+	float: right;
+	width: 35%;
+	height:100%;
+}
+.pagebody #arrow-container {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+}
+#down-arrow {
+	width: 40px;
+	height: 40px;
+	transition: ease all 0.4s;
+}
+#down-arrow:hover {
+	transform: matrix(1, 0, 0, 1, 0, 10);
+}
+#bookshelf {
+	width: 100%;
+}
+#bookshelf td img {
+	width: 85px;
+	height: 100px;
+}
+#bookshelf p {
+	text-align: center;
+}
+}
+@media only screen and (max-width: 640px) {
+header {
+	background: #FFF;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 5px solid #545454;
+	z-index: 100;
+	height: 70px;
+	letter-spacing: 1.25px;
+}
+header a {
+	position: relative;
+	color: #545454;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#logo-header {
+	position: relative;
+	float: left;
+	padding: 25px 25px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+section {
+	height:100vh;
+	width:100vw;
+	max-width: 100%;
+	margin:0;
+	padding:0;
+}
+#menu-icon {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: #44749D url(Images/menu.png) center no-repeat;
+	border-radius: 5px;
+}
+.nav-wrap {
+	position: absolute;
+	float: right;
+	top: 18px;
+	right: 18px;
+}
+.nav-wrap .nav-menu, .nav-wrap:active .nav-menu {
+	display: none;
+	position: fixed;
+	background: #fff;
+	border: 5px solid #444;
+	right: 18px;
+	top: 55px;
+	width: 50%;
+}
+.nav-wrap li {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+}
+.nav-wrap:hover .nav-menu {
+	display: block;
+}
+.nav-menu {
+	list-style: none;
+}
+li {
+	display: inline-block;
+	float: left;
+}
+#logo {
+	float: left;
+	padding: 30px 20px;
+	display: block;
+}
+a {
+	color: #545454;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover#menu-icon {
+	background-color: #545454;
+}
+a:hover {
+	opacity: 0.6;
+}
+.pagebody {
+	padding:20px;
+	margin:80px auto;
+	margin:0;
+	padding:0;
+	height:100vh;
+	width:100vw;
+	max-width: 100%;
+	text-align: center;
+}
+.pagebody-color-bg {
+	background: #44749D url(Images/cubes/cubes_transparent.png);
+}
+.pagebody-patterned-bg {
+	background: url(Images/cubes/cubes.png);
+}
+.pagebody-color-bg h1 {
+	text-align:center;
+	font-weight: 600;
+	font-size: 32px;
+	text-shadow:#000 1px 1px 1px;
+	color:#FFF;
+	padding-bottom: 25px;
+}
+.pagebody-color-bg p {
+	text-align: center;
+	font-size: .95em;
+	text-shadow: #000 1px 1px 1px;
+	color: #FFF;
+}
+.pagebody-patterned-bg h1 {
+	text-align:center;
+	font-size: 32px;
+	text-shadow:#EBE7E0 1px 1px;
+	color: #44749D;
+	padding-bottom: 0.5em;
+}
+.pagebody-patterned-bg p {
+	text-align: left;
+	font-size: 0.9em;
+	font-weight: 400;
+	color: #44749D;
+}
+.home-container {
+	position:relative;
+	top: 30vh;
+	margin: 0 auto;
+}
+.container {
+	position:relative;
+	top: 20vh;
+	margin: 0 auto;
+}
+.container-left {
+	padding: 10px 10px 10px 20px;
+}
+.container-right {
+	display: none;
+}
+.pagebody #arrow-container {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	margin: 0 auto;
+}
+#down-arrow {
+	width:2em;
+	height:2em;
+}
+.button_sliding_bg {
+	display: none;
 }

@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="utf-8">
-    <title>Alex Brioux - Home</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-58613289-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-  </head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-58613289-1', 'auto');
+ga('send', 'pageview');
+</script>
+<title>Alex Brioux</title>
+</head>
 
-<!-- Navigation Bar -->
-  <body>
-    <div class="nav">
-      <div class="container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about_me.html">About Me</a></li>
-          <li><a href="http://ca.linkedin.com/pub/alex-brioux/89/844/228/" target="_blank">LinkedIn</a></li>
-          <li><a href="contact_me.html">Contact Me</a></li>
-        </ul>
+<body>
+<!-- Header (Name and Nav Bar) -->
+<header class="header-wrap">
+  <div id="logo-header"><a href="#home">Alex Brioux</a></div>
+  <div class="nav-wrap"> <a href="#" id="menu-icon"></a>
+    <ul class="nav-menu">
+      <li id="nav-about"> <a href="#about">About</a> </li>
+      <li id="nav-projects"> <a href="#projects">Projects</a> </li>
+      <li> <a href="http://ca.linkedin.com/pub/alex-brioux/89/844/228/" target="_blank">LinkedIn</a> </li>
+      <li id="nav-contact"> <a href="mailto:abrioux25@gmail.com">Contact</a> </li>
+    </ul>
+  </div>
+</header>
+<!--End Header-->
+<section>
+  <div class="pagebody pagebody pagebody-color-bg" id="home">
+    <div class="home-container">
+      <h1>Hi, I'm Alex.</h1>
+      <p>Aspiring Front End Developer & UI/UX Designer. Baseball Fanatic. Food Lover.</p>
+      <a href="#about-me" id="about-me-a">
+        <div class="button_sliding_bg" id="about-me-btn">More About Me</div>
+      </a> </div>
+    <a href="#about">
+      <div id="arrow-container"><img id="down-arrow" src="Images/down-arrow.png"/></div>
+    </a> </div>
+  <div class="pagebody pagebody-patterned-bg" id="about">
+    <div class="container">
+      <h1>About</h1>
+      <div class="container-left">
+        <p>My name is Alex Brioux and I am a third year Honours Computer Science, Co-op student at the University of Waterloo. <br>
+          <br>
+          I am an <strong>energetic</strong> and <strong>eager-to-learn</strong> individual with a soft spot for awesome UI and UX. I enjoy staying up-to-date with the newest innovations in technology and programming that push the boundaries of what is possible. I am always willing to take on new challenges and experiences.<br>
+          <br>
+          When not at my keyboard, I enjoy watching baseball, touring MLB ballparks, eating great tasting food and watching movies.</p>
+      </div>
+      <div class="container-right">
+        <table id="bookshelf">
+          <tr>
+            <td colspan="2"><p>On My Bookshelf</p></td>
+          </tr>
+          <tr>
+            <td><a href="http://goo.gl/ntmZI6"><img src="Images/dont-make-me-think-revisited.jpg" alt="Don't Make Me Think"/></a></td>
+            <td><a href="http://goo.gl/Q8LvLa"><img src="Images/100things_every_designer_needs_to_know.jpg" alt="100 Things Every Designer Should Needs to Know About People"/></a></td>
+          </tr>
+        </table>
       </div>
     </div>
-
-    <div class="pagebody">
-      <div class="container">
-        <h1>Alex Brioux</h1>
-        <p>University of Waterloo - Honours Computer Science, Co-op</p>
-        <a href="about_me.html">About Me</a>
-      </div>
-    </div> 
-
-  </body>
+  </div>
+  <div class="pagebody pagebody-color-bg" id="projects">
+    <div class="container">
+    <h1>Projects</h1>
+    <p>Coming Soon...</p>
+    </div>
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+</body>
 </html>

@@ -126,12 +126,12 @@ section {
 }
 .pagebody-color-bg {
 	/* Other */
-	background: #44749D url(../images/cubes/cubes_transparent.png);
+	background: #44749D url(../Images/cubes/cubes_transparent.png);
 	color:#FFF;
 }
 .pagebody-patterned-bg {
 	/* Other */
-	background: url(../images/cubes/cubes.png);
+	background: url(../Images/cubes/cubes.png);
 	color: #44749D;
 }
 label {

@@ -79,7 +79,7 @@ header a {
 #logo-header {
 	/* Positioning */ 
 	position: relative;
-	top: 50%;
+	top: 35px;
 	
 	/* Display & Box Model */
 	display: inline-block;
@@ -185,7 +185,7 @@ input:focus, textarea:focus {
     color: #fff;
     cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media only screen and (min-device-width: 768px) {
 #primary-nav {
 	display: block;
 }
@@ -330,12 +330,12 @@ input:focus, textarea:focus {
 .pagebody #arrow-container {
 	/* Positioning */
 	position: absolute;
-	bottom: 10px;
-	
+	bottom: 37px;
 	/* Display & Box Model */
 	height: 50px;
 	width: 100%;
 	margin: 0 auto;
+	left: 1px;
 }
 #down-arrow {
 	/* Display & Box Model */
@@ -389,7 +389,10 @@ ul.social-media-icon-list {
 ul.social-media-icon-list > li {
 	/*Display & Box Model*/
 	display: inline;
-	padding: 0 1em;
+	padding: 0 0.5em;
+	
+	/* Other */
+	font-size: 0.86em;
 }
 ul.social-media-icon-list > li > a {
 	/*Other*/

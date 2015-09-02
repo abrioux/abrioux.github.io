@@ -83,7 +83,7 @@ header a {
 	
 	/* Display & Box Model */
 	display: inline-block;
-	padding: 25px 0 25px 2%;
+	padding: 25px 0 25px 1em;
 	float: left;
 	clear: right;
 		

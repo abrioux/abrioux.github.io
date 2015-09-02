@@ -62,7 +62,7 @@ $(document).ready(function() {
 		
 	/* Show and Hide Mobile Nav */	
 	var window_width = $(window).width();
-	if ( window_width < 768) {
+	if ( window_width < 769) {
 		$('.mobile-nav-menu').animate({height: 'toggle'}, 0);
 	}
     

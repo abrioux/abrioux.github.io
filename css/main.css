@@ -67,7 +67,7 @@ header a {
 	position: relative;
 	
 	/* Display & Box Model */
-	margin: 10px 15px;
+	margin: 10px 1em;
 	
 	/* Other */
 	color: #545454;
@@ -185,7 +185,7 @@ input:focus, textarea:focus {
     color: #fff;
     cursor: pointer;
 }
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-device-width: 769px) {
 #primary-nav {
 	display: block;
 }
@@ -403,7 +403,7 @@ ul.social-media-icon-list > li > a:hover{
 	opacity: 0.7;
 }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 .c-hamburger {
 	/* Positioning */
 	position: absolute;

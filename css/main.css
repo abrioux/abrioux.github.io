@@ -620,7 +620,7 @@ textarea {
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg);
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .c-hamburger--htx.is-active span::after {

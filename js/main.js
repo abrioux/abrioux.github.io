@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	 /* Scrolling Transitions */
 	jQuery.easing.def = "easeInOutSine";
-	$('#logo-header').click(function(event){
+	$('.navbar-brand').click(function(event){
 		event.preventDefault();
         $("html, body").animate({ 
 		scrollTop: "0px"
@@ -52,35 +52,5 @@ $(document).ready(function() {
    		var toggle = toggles[i];
     	toggleHandler(toggle);
   	};
- 
- 	function toggleHandler(toggle) {
-    	$(toggle).click(function(e) {
-      		e.preventDefault();
-      		(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-    	});
-  	}
-		
-	/* Show and Hide Mobile Nav */	
-	var window_width = $(window).width();
-	if ( window_width < 769) {
-		$('.mobile-nav-menu').animate({height: 'toggle'}, 0);
-	}
-    
-	$(function() {
-  		var menuVisible = false;
-		$('.c-hamburger').click(function() {
-	  		if (menuVisible) {
-				$('.mobile-nav-menu').animate({height: 'toggle', opacity: '0'}, 'easeInOutBack');
-				menuVisible = false;
-				return;
-	  		}
-			$('.mobile-nav-menu').animate({height: 'toggle', opacity: '1'}, 'easeInOutBack');
-			menuVisible = true;
-		});
-		$('.mobile-nav-menu').click(function() {
-	  		$(this).animate({height: 'toggle', opacity: '0'});
-	  		menuVisible = false;
-			(toggle.classList.contains("is-active") === true) ? toggle.classList.remove("is-active") : toggle.classList.add("is-active");
-		});
-  	});
+	
 });

@@ -8,17 +8,19 @@ canvas {
   vertical-align: bottom; }
 
 #home-background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100vh;
+  z-index: -1; }
 
 #home {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh; }
   #home #title-container {
     display: flex;
@@ -43,5 +45,28 @@ canvas {
     #home #title-container .subtitle {
       font-size: 1rem;
       font-weight: 300; }
+  #home #nav-container {
+    display: flex;
+    justify-content: space-around;
+    width: 17rem; }
+    #home #nav-container .nav-button {
+      padding: 0.75rem;
+      font-weight: 300;
+      border: 3px solid #44749d;
+      background-color: transparent;
+      color: #44749d;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: 0.3s all ease;
+      text-decoration: none; }
+      #home #nav-container .nav-button:hover {
+        cursor: pointer;
+        color: #ffffff;
+        background-color: #44749d; }
+
+#about {
+  border: 1px solid black; }
+  #about div {
+    height: 93vh; }
 
 /*# sourceMappingURL=main.css.map */

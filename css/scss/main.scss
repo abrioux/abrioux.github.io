@@ -13,9 +13,26 @@ body {
 }
 
 .section-title {
+
+    h1 {
+        margin: 0;
+        font-size: 3.5em;
+        font-weight: 600;
+    }
+}
+
+.sub-section-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+    background-color: transparent;
+    color: $primary-color;
+
+    div {
+        flex: 0 1 25%;
+        padding: 0 2rem;
+    }
 }
 
 #home-background {
@@ -93,37 +110,23 @@ body {
 }
 
 #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    color: $primary-color;
+    p {
+        margin: 0;
+        font-weight: 300;
+        font-size: 1.8em;
+        line-height: 1.5;
 
-    div {
-        flex: 0 1 25%;
-        padding: 0 2rem;
+        a {
+            color: $primary-color;
+            text-decoration: underline;
 
-        h1 {
-            margin: 0;
-            font-size: 3.5em;
-            font-weight: 600;
-        }
-
-        p {
-            margin: 0;
-            font-weight: 300;
-            font-size: 1.8em;
-            line-height: 1.5;
-
-            a {
-                color: $primary-color;
-                text-decoration: underline;
-
-                &:hover {
-                    color: $secondary-color;
-                }
+            &:hover {
+                color: $secondary-color;
             }
         }
     }
+
+}
+
+#projects {
 }

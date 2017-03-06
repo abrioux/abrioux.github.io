@@ -2,150 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Alex Brioux">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- CSS Stylesheet Link -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <!-- Google Fonts Link -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/scss/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600" rel="stylesheet">
     <title>Alex Brioux</title>
 </head>
-
 <body>
-<!-- Header (Name and Nav Bar) -->
-<header>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div id="#header-container"> <!--class="container">-->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Alex Brioux</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-home"><a href="#home">Home</a></li>
-                    <li class="nav-about"><a href="#about">About</a></li>
-                    <li class="nav-projects"><a href="#projects">Projects</a></li>
-                    <li class="nav-contact"><a href="#contact">Contact</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </nav>
-</header>
-
-<!--End Header-->
-<section>
-    <div class="pagebody pagebody-color-bg" id="home">
-        <div class="home-container">
-            <h1>Hi, I'm Alex.</h1>
-            <p>Aspiring Front End Developer & UI/UX Designer. Baseball Fanatic. Food Lover.</p>
-            <a href="#about-me" id="about-me-a">
-                <div class="button_sliding_bg" id="about-me-btn">More About Me</div>
-            </a></div>
-        <a href="#about">
-            <div id="arrow-container"><img id="down-arrow" alt="down-arrow" src="Images/down-arrow.png"/></div>
-        </a></div>
-    <div class="pagebody pagebody-patterned-bg" id="about">
-        <div class="container">
-            <h1>About</h1>
-            <div class="container-left">
-                <p>My name is Alex Brioux and I am a third year Honours Computer Science, Co-op student at the
-                    University of Waterloo. <br>
-                    <br>
-                    I am an <strong>energetic</strong> and <strong>eager-to-learn</strong> individual with an interest
-                    in awesome front-end development and UI/UX. I enjoy staying up-to-date with the newest innovations
-                    in technology and programming that push the boundaries of what is possible. I am always willing to
-                    take on new challenges and experiences.<br>
-                    <br>
-                    When not at my keyboard, I enjoy watching baseball, touring MLB ballparks, reading, eating great
-                    tasting food and watching movies.</p>
-            </div>
-            <div class="container-right">
-                <table id="bookshelf">
-                    <tr>
-                        <td colspan="2"><h2>On My Bookshelf</h2></td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.amazon.ca/Dont-Make-Think-Revisited-Usability/dp/0321965515"
-                               target="_blank"><img src="Images/dont-make-me-think-revisited.jpg"
-                                                    alt="Don't Make Me Think" title="Don't Make Me Think"></a></td>
-                        <td><a href="http://www.amazon.ca/Things-Every-Designer-Needs-People/dp/0321767535"
-                               target="_blank"><img src="Images/100things_every_designer_needs_to_know.jpg"
-                                                    alt="100 Things Every Designer Should Needs to Know About People"
-                                                    title="100 Things Every Designer Should Needs to Know About People"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="http://www.amazon.ca/Information-Architecture-World-Wide-Web/dp/0596000359"
-                               target="_blank"><img src="Images/information_architecture_for_the_www.jpg"
-                                                    alt="Information Architecture for the World Wide Web"
-                                                    title="Information Architecture for the World Wide Web"></a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+<div id="home-background" class="full-view-height-section">
+</div>
+<section id="home" class="full-view-height-section">
+    <div></div>
+    <div id="title-container">
+        <span class="title">Alex</span>
+        <span class="title">Brioux</span>
+        <hr>
+        <span class="subtitle">Front-end Developer</span>
     </div>
-    <div class="pagebody pagebody-color-bg" id="projects">
-        <div class="container">
-            <h1>Projects</h1>
-            <p>Coming Soon...</p>
-        </div>
-    </div>
-    <div class="pagebody pagebody-patterned-bg" id="contact">
-        <div class="container">
-            <h1>Contact</h1>
-            <div class="container-left">
-                <form id="contactform" action="http://formspree.io/abrioux25@gmail.com" method="POST">
-                    <label>Name</label>
-                    <input type="text" name="name" placeholder="Your name">
-                    <label>Email</label>
-                    <input type="email" name="_replyto" placeholder="Your email">
-                    <input type="hidden" name="_subject" value="Email from alexbrioux.com"/>
-                    <label>Message</label>
-                    <textarea name="message" placeholder="Your message"></textarea>
-                    <input type="text" name="_gotcha" style="display:none"/>
-                    <input type="submit" id="submit" value="Send">
-                </form>
-            </div>
-            <div class="container-right">
-                <div class="social-media">
-                    <h2>Connect Around the Web</h2>
-                    <ul class="social-media-icon-list">
-                        <li><a href="https://ca.linkedin.com/in/alexbrioux" target="_blank"><i
-                                class="fa fa-linkedin-square fa-4x"></i></a></li>
-                        <li><a href="https://github.com/apbrioux" target="_blank"><i
-                                class="fa fa-github-square fa-4x"></i></a></li>
-                        <li><a href="https://twitter.com/alexbrioux" target="_blank"><i
-                                class="fa fa-twitter-square fa-4x"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div id="nav-container">
+        <a href="#about" class="nav-button">About</a>
+        <a href="#projects" class="nav-button">Projects</a>
     </div>
 </section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
+<section id="about" class="full-view-height-section sub-section-container">
+    <div class="section-title">
+        <h1>About</h1>
+    </div>
+    <div>
+        <p>
+            Hi! I'm <strong>Alex</strong>, and I am studying <strong>Computer Science</strong> at the University of
+            Waterloo. I am an energetic and inquisitive person with a passion for front-end development and UI/UX.
+            Find me on <strong><a href="https://github.com/abrioux" target="_blank">Github</a></strong>, <strong><a
+                href="https://ca.linkedin.com/in/alexbrioux" target="_blank">LinkedIn</a></strong>, or contact me via
+            <strong><a href="mailto:abrioux25@gmail.com" target="_blank">Email</a></strong>.
+        </p>
+    </div>
+    <div></div>
+</section>
+<section id="projects" class="full-view-height-section sub-section-container">
+    <div class="section-title">
+        <h1>Projects</h1>
+    </div>
+    <div id="projects-list">
+        <a href="https://github.com/abrioux/sketch-login-form" class="project-container">
+            <img src="assets/images/Login UI.png">
+            <div class="caption">
+                <div class="blur"></div>
+                <div class="caption-text">
+                    <h1>Login UI Form</h1>
+                    <span>Simple login form designed in Sketch to get me introduced to the app.</span>
+                    <span>Click to see it on Github</span>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div></div>
+</section>
+
+<script src="js/particles.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -158,10 +74,9 @@
         a.src = g;
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
     ga('create', 'UA-58613289-1', 'auto');
     ga('send', 'pageview');
-
 </script>
+
 </body>
 </html>

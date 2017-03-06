@@ -18,20 +18,7 @@ body {
         margin: 0;
         font-size: 3.5em;
         font-weight: 600;
-    }
-}
-
-.sub-section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    color: $primary-color;
-
-    div {
-        flex: 0 1 25%;
-        padding: 0 2rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -110,18 +97,31 @@ body {
 }
 
 #about {
-    p {
-        margin: 0;
-        font-weight: 300;
-        font-size: 1.8em;
-        line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    color: $primary-color;
 
-        a {
-            color: $primary-color;
-            text-decoration: underline;
+    div {
+        flex: 0 1 25%;
+        padding: 0 2rem;
 
-            &:hover {
-                color: $secondary-color;
+        p {
+            margin: 0;
+            font-weight: 300;
+            font-size: 1.8em;
+            line-height: 1.5;
+
+            a {
+                color: $primary-color;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+
             }
         }
     }
@@ -129,4 +129,88 @@ body {
 }
 
 #projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    color: $primary-color;
+    margin-bottom: 20px;
+    min-height: 80vh;
+
+    #projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 100%;
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            width: 17rem;
+            height: 17rem;
+            border: 1px solid #000000;
+            box-shadow: 0.1em 0.1em 0.3em 0.1em rgba(0, 0, 0, 0.26);
+            margin: 25px;
+
+            img {
+                flex-shrink: 0;
+                min-width: 100%;
+                min-height: 100%;
+                transition: 0.3s all ease-in-out;
+            }
+
+            div {
+                position: absolute;
+                height: 17rem;
+                width: 17rem;
+            }
+
+            .caption {
+                cursor: pointer;
+                opacity: 0;
+                transition: 0.3s all ease-in-out;
+
+                .caption-text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: #ffffff;
+                    text-align: center;
+                    padding-top: -0.5rem;
+                    transition: 0.3s all ease-in-out;
+
+                    h1 {
+                        margin: 0;
+                        border-bottom: 1px solid #ffffff;
+                    }
+
+                    span {
+                        width: 90%;
+                    }
+
+                    &:hover {
+                        padding-top: 0.5rem;
+                    }
+                }
+
+                .blur {
+                    background-color: rgba(0, 0, 0, 0.65);
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.15, 1.15);
+                }
+            }
+        }
+    }
 }

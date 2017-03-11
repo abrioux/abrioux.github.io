@@ -59,6 +59,9 @@ body {
     display: flex;
     justify-content: space-around;
     width: 17rem; }
+    @media only screen and (max-width: 415px) {
+      #home #nav-container {
+        margin-bottom: 2em; } }
     #home #nav-container .nav-button {
       padding: 0.75rem;
       font-weight: 300;
